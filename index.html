@@ -1,0 +1,141 @@
+<head>
+  <title>Weathergrid</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="index.js"></script>
+</head>
+<body class="body">
+  <main>
+    <nav class="top-bar">
+      <div class="top-bar-list-menu">
+        <img src="/images/menu-01.svg" alt="menu" />
+      </div>
+      <div class="top-bar-images">
+        <img src="/images/Logo.svg" alt="logo" id="logo" />
+        <img src="/images/weathergrid-text.svg" alt="text-logo" />
+      </div>
+      <div class="top-bar-menu">
+        <select title="my list" class="top-bar-menu-services-list">
+          <option value="" disabled selected hidden>Υπηρεσίες</option>
+        </select>
+        <button class="login" id="login-button">Σύνδεση</button>
+      </div>
+      <div class="top-bar-placeholder"></div>
+    </nav>
+    <div class="body-main">
+      <div class="body-main-left-side-bar">
+        <div class="body-main-left-side-bar-fav-locations">
+          Favorite Locations
+        </div>
+        <div class="body-main-left-side-bar-search-bar">
+          <input type="image" src="/images/search.svg" class="search-button" />
+          <input type="text" class="search-bar" placeholder="Search Location" />
+          <input type="image" src="/images/x-close.svg" />
+        </div>
+        <div class="body-main-left-side-bar-cards-field">
+          <div class="cards">
+            <img
+              src="/images/cloudy-clear.svg"
+              alt="cloudy-clear"
+              id="cloudy-clear"
+              class="cards-weather-images"
+            />
+            <div class="temperature-text-area">
+              <div class="temperature-text">25℃ - 12℃</div>
+              <div class="divider">|</div>
+              <div class="cities">Thessaloniki</div>
+            </div>
+            <img src="/images/chevron-right.svg" alt="chevron" />
+          </div>
+          <div class="cards">
+            <img
+              src="/images/Cloudy.svg"
+              alt="cloudy"
+              class="cards-weather-images"
+            />
+            <div class="temperature-text-area">
+              <div class="temperature-text">28℃ - 14℃</div>
+              <div class="divider">|</div>
+              <div class="cities">Athens</div>
+            </div>
+            <img src="/images/chevron-right.svg" alt="chevron" />
+          </div>
+          <div class="cards">
+            <img
+              src="/images/Drizzle.svg"
+              alt="Drizzle"
+              class="cards-weather-images"
+            />
+            <div class="temperature-text-area">
+              <div class="temperature-text">24℃ - 10℃</div>
+              <div class="divider">|</div>
+              <div class="cities">Kavala</div>
+            </div>
+            <img src="/images/chevron-right.svg" alt="chevron" />
+          </div>
+          <div class="cards">
+            <img
+              src="/images/cloudy-clear.svg"
+              alt="cloudy-clear"
+              id="cloudy-clear"
+              class="cards-weather-images"
+            />
+            <div class="temperature-text-area">
+              <div class="temperature-text">26℃ - 12℃</div>
+              <div class="divider">|</div>
+              <div class="cities">Kilkis</div>
+            </div>
+            <img src="/images/chevron-right.svg" alt="chevron" />
+          </div>
+          <div class="cards">
+            <img src="/images/Fog.svg" alt="Fog" class="cards-weather-images" />
+            <div class="temperature-text-area">
+              <div class="temperature-text">20℃ - 10℃</div>
+              <div class="divider">|</div>
+              <div class="cities">Alexandroupoli</div>
+            </div>
+            <img src="/images/chevron-right.svg" alt="chevron" />
+          </div>
+          <div class="cards">
+            <img
+              src="/images/Sunny.svg"
+              alt="Sunny"
+              class="cards-weather-images"
+            />
+            <div class="temperature-text-area">
+              <div class="temperature-text">27℃ - 11℃</div>
+              <div class="divider">|</div>
+              <div class="cities">Kastoria</div>
+            </div>
+            <img src="/images/chevron-right.svg" alt="chevron" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </main>
+  <footer class="page-footer">
+    <div class="left">
+      <div class="page-footer-buttons">
+        <div class="page-footer-buttons-download">
+          <input type="image" src="/images/Google_Button.svg" />
+          <a href="#" class="download-buttons"> </a>
+        </div>
+        <div class="page-footer-buttons-download">
+          <input type="image" src="/images/Apple_Button.svg" />
+          <a href="#" class="download-buttons"> </a>
+        </div>
+      </div>
+      <div class="page-footer-links-field">
+        <a href="#" class="links">Ποιοι είμαστε</a>
+        <a href="#" class="links">Επικοινωνία</a>
+        <a href="#" class="links mobile-only-links">Δήλωσε τυχόν πρόβλημα</a>
+        <a href="#" class="links">Όροι χρήσης</a>
+      </div>
+    </div>
+    <div class="page-footer-copy-rights">
+      <p>Copyright © Weathergrid 2023</p>
+    </div>
+  </footer>
+</body>

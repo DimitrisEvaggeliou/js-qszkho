@@ -1,0 +1,368 @@
+body {
+  margin: 0;
+  background-color: #fafafa;
+  flex-direction: column;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: -120px;
+}
+
+/* <------ Top Bar ------> */
+
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.top-bar-menu {
+  display: flex;
+  gap: 26px;
+}
+
+.top-bar-images {
+  display: flex;
+  gap: 26px;
+}
+.top-bar-menu-services-list {
+  font-weight: bold;
+  border-color: transparent;
+}
+
+.top-bar-menu-services-list:hover {
+  cursor: pointer;
+}
+
+#login-button {
+  background-color: transparent;
+  border: transparent;
+  font-weight: bold;
+}
+
+.login:hover {
+  cursor: pointer;
+}
+
+.body-main {
+  padding: 80px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.top-bar-list-menu {
+  display: none;
+}
+
+.top-bar-placeholder {
+  display: none;
+}
+
+/* <------ Left Bar ------> */
+
+.body-main-left-side-bar {
+  display: flex;
+  width: 380px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.body-main-left-side-bar-fav-locations {
+  font-size: 24px;
+  font-family: Inter;
+  line-height: 36px;
+  letter-spacing: 0.111px;
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.body-main-left-side-bar-search-bar {
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e1e6ef;
+}
+
+.search-bar {
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  width: 100%;
+  border: transparent;
+}
+
+.body-main-left-side-bar-cards-field {
+  display: flex;
+  padding: 16px 0px 0px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.body-main-left-side-bar-cards-field .cards {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 16px;
+  flex: 1 0 0;
+  border-radius: 4px;
+  border: 1px solid #e1e6ef;
+  background: #fff;
+  height: 72px;
+}
+
+.body-main-left-side-bar-cards-field .cards-weather-images {
+  height: 40px;
+  width: 40px;
+}
+
+.cards .temperature-text-area {
+  display: flex;
+  width: 252px;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.cards .temperature-text {
+  color: #1d2433;
+  text-align: right;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.cards .divider {
+  color: #1d2433;
+  font-size: 14px;
+  font-family: Inter;
+}
+
+.cards .cities {
+  color: #1d2433;
+  font-size: 16px;
+  font-family: Inter;
+}
+
+/* <------ Footer ------> */
+
+.push {
+  height: 120px;
+}
+
+.page-footer {
+  display: flex;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  padding: 0px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0d14;
+}
+
+.page-footer .left {
+  display: flex;
+  gap: 60px;
+}
+
+.page-footer-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.page-footer-buttons-download {
+  width: 156px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #3f444d;
+  background: #0a0d14;
+}
+
+.page-footer-links-field {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.page-footer-links-field .links {
+  font-size: 14px;
+  font-family: Inter;
+  color: white;
+  text-decoration: none;
+}
+
+.page-footer-links-field .mobile-only-links {
+  display: none;
+  visibility: hide;
+}
+
+.page-footer-copy-rights {
+  font-size: 12px;
+  font-family: Inter;
+  color: #ffffffbf;
+}
+
+/* <------ Mobile ------> */
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin-bottom: -262px;
+  }
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: transparent;
+    margin: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .top-bar-images {
+    display: flex;
+    gap: 8px;
+  }
+
+  .top-bar-menu {
+    display: none;
+    visibility: hide;
+  }
+
+  .top-bar-list-menu {
+    display: block;
+  }
+
+  .top-bar-placeholder {
+    display: unset;
+  }
+
+  .body-main-left-side-bar-fav-locations {
+    display: none;
+    visibility: hide;
+  }
+
+  .body-main {
+    display: flex;
+    padding: 16px;
+  }
+
+  .body-main-left-side-bar-cards-field {
+    padding-top: 16px;
+    gap: 8px;
+    align-items: unset;
+  }
+
+  .body-main-left-side-bar {
+    gap: 16px;
+  }
+
+  .cards .temperature-text-area {
+    gap: 8px;
+  }
+
+  .push {
+    height: 262px;
+  }
+
+  .page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    background: #0a0d14;
+    height: 262px;
+    margin-top: 16;
+    padding: 24px;
+    align-self: stretch;
+  }
+
+  .page-footer .left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .page-footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .page-footer-links-field .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-footer-links-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .page-footer-copy-rights {
+    font-size: 10px;
+  }
+
+  .body-main-left-side-bar-search-bar {
+    margin-right: 16px;
+  }
+
+  .top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    right: 24px;
+    width: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .body-main-left-side-bar-cards-field {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 16px 16px 0px 0px;
+  }
+
+  .top-bar {
+    width: 100%;
+  }
+
+  .cards .temperature-text-area {
+    width: 200px;
+  }
+
+  .page-footer {
+    width: 100%;
+  }
+}
